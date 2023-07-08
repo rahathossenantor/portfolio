@@ -28,7 +28,6 @@
 }
 
 /* shared styles */
-
 .btn-primary {
     border-radius: 5px;
     background: #FD6E0A;
@@ -138,4 +137,29 @@ nav li a {
 
 .about-info {
     text-align: center;
+}
+
+/* what i do section styles */
+.what-i-do {
+    margin-bottom: 100px;
+}
+
+.what-i-do-description {
+    padding: 30px 150px;
+}
+
+.skills-container {
+    display: flex;
+    gap: 20px;
+}
+
+.skill {
+    padding: 25px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+}
+
+.skill-description {
+    color: #757575;
 }
