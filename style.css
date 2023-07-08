@@ -52,9 +52,9 @@
 header {
     background-color: #FFF8F3;
     padding: 50px 0 0 0;
-    background-image: url("./images/header_bg.png");
+    background-image: url("./images/header_bg.png"), url("./images/developer.png");
     background-repeat: no-repeat;
-    background-position: bottom right;
+    background-position: bottom right, top left;
 }
 
 /* navbar */
@@ -205,7 +205,7 @@ footer {
 }
 .footer-content {
     display: flex;
-    gap: 100px;
+    gap: 30px;
 }
 .footer-item {
     width: 50%;
