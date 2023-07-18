@@ -226,3 +226,18 @@ footer {
     border: 0;
     width: 75%;
 }
+
+
+/* responsive styles */
+/* mobile devices */
+@media screen and (max-width: 576px) {
+    .section-title {
+        margin-bottom: 30px;
+    }
+    .what-i-do-description {
+        padding: 0 25px 15px 25px;
+    }
+    .skills-container {
+        flex-direction: column;
+    }
+}
