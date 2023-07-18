@@ -103,6 +103,10 @@ nav li a {
     width: 35%;
 }
 
+.image-content {
+    display: flex;
+}
+
 .image-content img {
     width: 100%;
 }
@@ -231,13 +235,138 @@ footer {
 /* responsive styles */
 /* mobile devices */
 @media screen and (max-width: 576px) {
+    /* shared */
+    .btn-primary {
+        border-radius: 4px;
+        padding: 8px 23px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    /* navbar */
+    nav li {
+        padding: 0 10px;
+    }
+
+    /* banner */
+    .banner,  nav{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .text-content, .image-content {
+        width: 100%;
+    }
+    .banner-greeting {
+        font-size: 35px;
+    }
+    .banner-title {
+        font-size: 55px;
+        margin-bottom: 15px;
+    }
+
+    /* about */
+    .about {
+        padding: 25px;
+    }
+    .about-info-container {
+        gap: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    /* what i do */
     .section-title {
         margin-bottom: 30px;
     }
     .what-i-do-description {
         padding: 0 25px 15px 25px;
     }
+    .skills-container, .footer-content {
+        flex-direction: column;
+    }
+
+    /* resume */
+    .resume-container {
+        gap: 40px;
+        flex-direction: column;
+    }
+
+    /* footer */
+    footer {
+        text-align: center;
+    }
+    .footer-item, .contact {
+        width: 100%;
+    }
+    .footer-item h3 {
+        text-align: center ;
+    }
+    .contact input[type="text"], .contact input[type="email"], textarea {
+        width: 70%;
+    }
+}
+
+/* mediam devices */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    /* shared */
+    .btn-primary {
+        padding: 8px 23px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    /* banner */
+    .banner {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .text-content, .image-content {
+        width: 100%;
+    }
+    .image-content {
+        justify-content: center;
+    }
+    .image-content img {
+        width: 70%;
+    }
+    .banner-greeting {
+        font-size: 40px;
+    }
+    .banner-title {
+        font-size: 60px;
+        margin-bottom: 15px;
+    }
+
+    /* about */
+    .about {
+        padding: 30px;
+    }
+    .about-info-container {
+        gap: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    /* skills */
     .skills-container {
         flex-direction: column;
+    }
+    .what-i-do-description {
+        padding: 0 30px 15px 30px;
+    }
+
+    /* footer */
+    footer {
+        text-align: center;
+    }
+    .footer-content {
+        gap: 50px;
+        flex-direction: column;
+    }
+    .footer-item {
+        width: 100%;
+    }
+    .footer-item h3 {
+        text-align: center ;
+    }
+    .contact {
+        width: 100%;
     }
 }
